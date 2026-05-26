@@ -1,0 +1,157 @@
+./src/bun_core/deprecated.zig:174:test "basic SinglyLinkedList test" {
+./src/bun_core/deprecated.zig:388:test "basic DoublyLinkedList test" {
+./src/bun_core/deprecated.zig:433:test "DoublyLinkedList concatenation" {
+./src/bun_core/deprecated.zig:573:    test "RapidHash.hash" {
+./src/bun_core/Progress.zig:411:test "basic functionality" {
+./src/clap/args.zig:33:test "SliceIterator" {
+./src/clap/args.zig:298:test "ShellIterator" {
+./src/clap/clap.zig:198:test "parseParam" {
+./src/clap/streaming.zig:261:test "short params" {
+./src/clap/streaming.zig:307:test "long params" {
+./src/clap/streaming.zig:345:test "positional params" {
+./src/clap/streaming.zig:361:test "all params" {
+./src/clap/streaming.zig:418:test "errors" {
+./src/collections/comptime_string_map.zig:327:test "ComptimeStringMap list literal of list literals" {
+./src/collections/comptime_string_map.zig:339:test "ComptimeStringMap array of structs" {
+./src/collections/comptime_string_map.zig:355:test "ComptimeStringMap slice of structs" {
+./src/collections/comptime_string_map.zig:383:test "ComptimeStringMap void value type, slice of structs" {
+./src/collections/comptime_string_map.zig:399:test "ComptimeStringMap void value type, list literal of list literals" {
+./src/collections/hive_array.zig:146:test "HiveArray" {
+./src/collections/linear_fifo.zig:444:test "LinearFifo(u8, .Dynamic) discard(0) from empty buffer should not error on overflow" {
+./src/collections/linear_fifo.zig:452:test "LinearFifo(u8, .Dynamic)" {
+./src/collections/linear_fifo.zig:538:test "LinearFifo" {
+./src/collections/StaticHashMap.zig:571:test "StaticHashMap: put, get, delete, grow" {
+./src/collections/StaticHashMap.zig:602:test "HashMap: put, get, delete, grow" {
+./src/collections/StaticHashMap.zig:636:test "SortedHashMap: cmp" {
+./src/collections/StaticHashMap.zig:649:test "SortedHashMap: put, get, delete, grow" {
+./src/collections/StaticHashMap.zig:683:test "SortedHashMap: collision test" {
+./src/md/unicode.zig:350:test "ASCII case folding" {
+./src/md/unicode.zig:371:test "Latin-1 supplement case folding" {
+./src/md/unicode.zig:382:test "Greek case folding" {
+./src/md/unicode.zig:389:test "Cyrillic case folding" {
+./src/md/unicode.zig:396:test "Two-codepoint fold: German eszett" {
+./src/md/unicode.zig:404:test "Two-codepoint fold: fi ligature" {
+./src/md/unicode.zig:412:test "Three-codepoint fold: ffi ligature" {
+./src/md/unicode.zig:421:test "Alternating range: Latin Extended-A" {
+./src/md/unicode.zig:435:test "No mapping: already lowercase or not a letter" {
+./src/md/unicode.zig:442:test "Omega symbol" {
+./src/md/unicode.zig:449:test "Fullwidth Latin uppercase" {
+./src/md/unicode.zig:456:test "Deseret alphabet" {
+./src/md/unicode.zig:463:test "Micro sign" {
+./src/md/unicode.zig:470:test "Kelvin sign" {
+./src/ptr/CowSlice.zig:289:test CowSlice {
+./src/router/router.zig:1418:test "Pattern Match" {
+./src/router/router.zig:1571:test "Github API Route Loader" {
+./src/router/router.zig:1680:test "Sample Route Loader" {
+./src/router/router.zig:1784:test "Routes basic" {
+./src/router/router.zig:1834:test "Dynamic routes" {
+./src/router/router.zig:1870:test "Pattern" {
+./src/runtime/node/assert/myers_diff.zig:415:test areLinesEqual {
+./src/runtime/node/assert/myers_diff.zig:478:test StrDiffer {
+./src/runtime/test_runner/diff/diff_match_patch.zig:85:            test eql {
+./src/runtime/test_runner/diff/diff_match_patch.zig:1543:        test diffCommonPrefix {
+./src/runtime/test_runner/diff/diff_match_patch.zig:1550:        test diffCommonSuffix {
+./src/runtime/test_runner/diff/diff_match_patch.zig:1557:        test diffCommonOverlap {
+./src/runtime/test_runner/diff/diff_match_patch.zig:1583:        test diffHalfMatch {
+./src/runtime/test_runner/diff/diff_match_patch.zig:1726:        test diffLinesToChars {
+./src/runtime/test_runner/diff/diff_match_patch.zig:1820:        test diffCharsToLines {
+./src/runtime/test_runner/diff/diff_match_patch.zig:1861:        test diffCleanupMerge {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2078:        test diffCleanupSemanticLossless {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2214:        test rebuildtexts {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2275:        test diffBisect {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2317:        test "diffHalfMatch leak regression test" {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2336:        test diff {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2620:        test "diffLineMode" {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2653:        test diffCleanupSemantic {
+./src/runtime/test_runner/diff/diff_match_patch.zig:2830:        test "diffCleanupEfficiency" {
+./src/runtime/test_runner/expect.zig:2169:test "Expect.trimLeadingWhitespaceForInlineSnapshot" {
+./src/runtime/test_runner/expect.zig:2244:test "fuzz Expect.trimLeadingWhitespaceForInlineSnapshot" {
+./src/shell_parser/braces.zig:698:test Lexer {
+./src/string/SmolStr.zig:227:test SmolStr {
+./src/string/SmolStr.zig:250:test "SmolStr.Inlined.init" {
+./src/string/SmolStr.zig:262:test "Creating an inlined SmolStr does not allocate" {
+./src/unicode/uucode_lib/build.zig:563:test "simple build config with just fields/fields_0" {
+./src/unicode/uucode_lib/build.zig:621:test "complex build config with all fields_0 through fields_9 and extensions_0 through extensions_9" {
+./src/unicode/uucode_lib/src/grapheme.zig:104:test "Iterator nextCodePoint/peekCodePoint" {
+./src/unicode/uucode_lib/src/grapheme.zig:151:test "utf8Iterator nextGrapheme/peekGrapheme" {
+./src/unicode/uucode_lib/src/grapheme.zig:520:test "GraphemeBreakTest.txt - computeGraphemeBreak" {
+./src/unicode/uucode_lib/src/grapheme.zig:615:test "GraphemeBreakTest.txt - isBreak" {
+./src/unicode/uucode_lib/src/grapheme.zig:619:test "long emoji zwj sequences" {
+./src/unicode/uucode_lib/src/grapheme.zig:655:test "long emoji zwj sequences with emoji modifiers" {
+./src/unicode/uucode_lib/src/grapheme.zig:704:test "sequence of regional indicators" {
+./src/unicode/uucode_lib/src/root.zig:14:test {
+./src/unicode/uucode_lib/src/root.zig:18:test "name" {
+./src/unicode/uucode_lib/src/root.zig:22:test "is_alphabetic" {
+./src/unicode/uucode_lib/src/root.zig:28:test "case_folding_simple" {
+./src/unicode/uucode_lib/src/root.zig:33:test "simple_uppercase_mapping" {
+./src/unicode/uucode_lib/src/root.zig:38:test "generalCategory" {
+./src/unicode/uucode_lib/src/root.zig:42:test "getAll" {
+./src/unicode/uucode_lib/src/root.zig:56:test "get extension foo" {
+./src/unicode/uucode_lib/src/root.zig:61:test "get extension emoji_odd_or_even" {
+./src/unicode/uucode_lib/src/root.zig:65:test "get packed optional enum works" {
+./src/unicode/uucode_lib/src/root.zig:70:test "get packed optional bool works" {
+./src/unicode/uucode_lib/src/root.zig:76:test "get union unpacked, shift" {
+./src/unicode/uucode_lib/src/root.zig:82:test "get union unpacked, direct" {
+./src/unicode/uucode_lib/src/root.zig:88:test "get union packed, shift" {
+./src/unicode/uucode_lib/src/root.zig:95:test "get union packed, direct" {
+./src/unicode/uucode_lib/src/root.zig:101:test "special_casing_condition" {
+./src/unicode/uucode_lib/src/root.zig:111:test "special_lowercase_mapping" {
+./src/unicode/uucode_lib/src/root.zig:120:test "info extension" {
+./src/unicode/uucode_lib/src/root.zig:131:test "is_emoji_vs_base" {
+./src/unicode/uucode_lib/src/utf8.zig:84:test "Iterator for ascii" {
+./src/unicode/uucode_lib/src/utf8.zig:96:test "Iterator for emoji" {
+./src/unicode/uucode_lib/src/utf8.zig:110:test "Iterator overlong utf8" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:139:test "wcwidthNext iterator state" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:156:test "wcwidthRemaining" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:175:test "utf8Wcwidth" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:179:test "wcwidth{,Next,Remaining} README example" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:195:test "wcwidth ascii" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:202:test "wcwidth control" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:209:test "wcwidth default ignorable" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:216:test "wcwidth marks standing alone" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:221:test "wcwidth keycap standing alone" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:226:test "wcwidth regional indicator standing alone" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:231:test "wcwidth emoji" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:236:test "wcwidth ambiguous" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:241:test "wcwidth fullwidth" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:246:test "wcwidth soft hyphen" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:251:test "wcwidth sequence base + Mn" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:256:test "wcwidth sequence base + Mc" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:261:test "wcwidth sequence emoji + modifier" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:267:test "wcwidth sequence emoji + VS16" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:273:test "wcwidth sequence emoji + VS15" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:279:test "wcwidth sequence keycap" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:285:test "wcwidth sequence regional indicator full" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:291:test "wcwidth sequence emoji zwj" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:297:test "wcwidth sequence emoji zwj long" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:303:test "wcwidth sequence emoji zwj long with emoji modifiers" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:309:test "wcwidth Hangul L+V" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:315:test "wcwidth Hangul L+V+T" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:321:test "wcwidth Hangul L+L+V" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:328:test "wcwidth Hangul LV+T" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:334:test "wcwidth Devanagari with ZWJ" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:340:test "wcwidth Devanagari 3 consonants" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:361:test "IteratorNoControl nextCodePoint/peekCodePoint" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:749:test "GraphemeBreakTest.txt - x.computeGraphemeBreakNoControl" {
+./src/unicode/uucode_lib/src/x/grapheme.zig:780:test "GraphemeBreakTest.txt - x.isBreakNoControl" {
+./src/unicode/uucode_lib/src/x/root.zig:4:test {
+./src/unicode/uucode_lib/src/x/root.zig:10:test "wcwidth_standalone control characters are width 0" {
+./src/unicode/uucode_lib/src/x/root.zig:19:test "wcwidth_standalone surrogates are width 0" {
+./src/unicode/uucode_lib/src/x/root.zig:27:test "wcwidth_standalone line and paragraph separators are width 0" {
+./src/unicode/uucode_lib/src/x/root.zig:33:test "wcwidth_standalone default ignorable characters are width 0" {
+./src/unicode/uucode_lib/src/x/root.zig:43:test "wcwidth_standalone soft hyphen exception is width 1" {
+./src/unicode/uucode_lib/src/x/root.zig:48:test "wcwidth_standalone combining marks are width 1" {
+./src/unicode/uucode_lib/src/x/root.zig:55:test "wcwidth_zero_in_grapheme combining marks" {
+./src/unicode/uucode_lib/src/x/root.zig:73:test "wcwidth_standalone combining enclosing keycap exception is width 2" {
+./src/unicode/uucode_lib/src/x/root.zig:78:test "wcwidth_zero_in_grapheme combining enclosing keycap exception is true" {
+./src/unicode/uucode_lib/src/x/root.zig:83:test "wcwidth_standalone regional indicators are width 2" {
+./src/unicode/uucode_lib/src/x/root.zig:91:test "wcwidth_standalone em dashes have special widths" {
+./src/unicode/uucode_lib/src/x/root.zig:97:test "wcwidth_standalone ambiguous width characters are width 1" {
+./src/unicode/uucode_lib/src/x/root.zig:104:test "wcwidth_standalone east asian wide and fullwidth are width 2" {
+./src/unicode/uucode_lib/src/x/root.zig:112:test "wcwidth_standalone hangul jamo V and T are width 1" {
+./src/unicode/uucode_lib/src/x/root.zig:120:test "wcwidth_zero_in_grapheme hangul jamo V and T are true" {
+./src/unicode/uucode_lib/src/x/root.zig:129:test "wcwidth_standalone format characters non-DI are width 1" {
+./src/unicode/uucode_lib/src/x/root.zig:134:test "wcwidth_standalone emoji_modifier is 2" {
+./src/unicode/uucode_lib/src/x/root.zig:140:test "wcwidth_zero_in_grapheme emoji_modifier is true" {
+./src/unit_test.zig:1:test {
+./src/unit_test.zig:6:test "basic string usage" {
