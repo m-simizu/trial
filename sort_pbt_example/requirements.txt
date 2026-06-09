@@ -1,0 +1,5 @@
+# テスト実行フレームワーク
+pytest>=8.0
+
+# Property-Based Testing用ライブラリ
+hypothesis>=6.0
