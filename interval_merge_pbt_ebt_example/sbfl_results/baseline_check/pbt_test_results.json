@@ -1,0 +1,29 @@
+{
+  "pytest_exit_status": 0,
+  "tests": [
+    {
+      "nodeid": "tests/test_interval_merge_pbt.py::test_adding_duplicate_interval_does_not_change_result",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_pbt.py::test_input_order_does_not_change_result",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_pbt.py::test_merging_is_idempotent",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_pbt.py::test_merging_preserves_covered_integer_points",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_pbt.py::test_output_is_sorted_and_non_overlapping",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_pbt.py::test_touching_intervals_are_merged",
+      "status": "passed"
+    }
+  ]
+}

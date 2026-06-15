@@ -1,0 +1,49 @@
+{
+  "pytest_exit_status": 1,
+  "tests": [
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_invalid_intervals_raise_error[invalid0]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_invalid_intervals_raise_error[invalid1]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_invalid_intervals_raise_error[invalid2]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_invalid_intervals_raise_error[invalid3]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_merge_intervals_examples[intervals0-expected0]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_merge_intervals_examples[intervals1-expected1]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_merge_intervals_examples[intervals2-expected2]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_merge_intervals_examples[intervals3-expected3]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_merge_intervals_examples[intervals4-expected4]",
+      "status": "failed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_merge_intervals_examples[intervals5-expected5]",
+      "status": "passed"
+    },
+    {
+      "nodeid": "tests/test_interval_merge_ebt.py::test_touching_intervals_can_be_kept_separate",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "label": "baseline_check",
+  "formula": "ochiai",
+  "sut": "C:\\Users\\masoc\\Documents\\Codex\\PBTtrial\\interval_merge_pbt_ebt_example\\interval_merger.py",
+  "suites": {
+    "ebt": {
+      "passed": 11,
+      "failed": 0,
+      "total": 11
+    },
+    "pbt": {
+      "passed": 6,
+      "failed": 0,
+      "total": 6
+    }
+  }
+}

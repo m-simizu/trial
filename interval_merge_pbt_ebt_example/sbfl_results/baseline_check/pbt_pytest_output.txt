@@ -1,0 +1,10 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.0, pluggy-1.6.0
+rootdir: C:\Users\masoc\Documents\Codex\PBTtrial\interval_merge_pbt_ebt_example
+configfile: pytest.ini
+plugins: hypothesis-6.155.2, cov-7.1.0
+collected 6 items
+
+tests\test_interval_merge_pbt.py ......                                  [100%]
+
+============================== 6 passed in 1.24s ==============================

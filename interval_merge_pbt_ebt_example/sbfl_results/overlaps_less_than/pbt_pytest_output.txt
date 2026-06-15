@@ -1,0 +1,408 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.0, pluggy-1.6.0
+rootdir: C:\Users\masoc\Documents\Codex\PBTtrial\interval_merge_pbt_ebt_example
+configfile: pytest.ini
+plugins: hypothesis-6.155.2, cov-7.1.0
+collected 6 items
+
+tests\test_interval_merge_pbt.py F...FF                                  [100%]
+
+================================== FAILURES ===================================
+__________________ test_output_is_sorted_and_non_overlapping __________________
+tests\test_interval_merge_pbt.py:30: in test_output_is_sorted_and_non_overlapping
+    @settings(max_examples=20)
+                   ^^^
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1656: in _raise_to_user
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1150: in execute_once
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:824: in default_executor
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1107: in run
+    ???
+tests\test_interval_merge_pbt.py:30: in test_output_is_sorted_and_non_overlapping
+    @settings(max_examples=20)
+                   ^^^^^^^^^
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1016: in test
+    ???
+tests\test_interval_merge_pbt.py:38: in test_output_is_sorted_and_non_overlapping
+    assert passed
+E   assert False
+E   Falsifying example: test_output_is_sorted_and_non_overlapping(
+E       values=[(0, 0), (0, 0)],
+E   )
+---------------------------- Captured stdout call -----------------------------
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 0), (0, 0)]
+FAIL: sorted and non-overlapping | input=[(-26, -10), (-14, -9), (-34, -26), (-2, 7), (-14, -9)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 0), (0, 0)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 0)]
+PASS: sorted and non-overlapping | input=[(0, 0)]
+PASS: sorted and non-overlapping | input=[]
+PASS: sorted and non-overlapping | input=[(-50, -50), (0, 0)]
+PASS: sorted and non-overlapping | input=[(0, 0), (6, 6)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 7)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 2)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 8)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 4)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 5)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 14)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 11)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 16)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 6)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 3)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 18)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 12)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 1)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 19)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 15)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 17)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 9)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 20)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 13)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 10)]
+FAIL: sorted and non-overlapping | input=[(0, 0), (0, 0)]
+____________ test_adding_duplicate_interval_does_not_change_result ____________
+tests\test_interval_merge_pbt.py:71: in test_adding_duplicate_interval_does_not_change_result
+    @settings(max_examples=20)
+                   ^^^
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1656: in _raise_to_user
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1150: in execute_once
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:824: in default_executor
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1107: in run
+    ???
+tests\test_interval_merge_pbt.py:71: in test_adding_duplicate_interval_does_not_change_result
+    @settings(max_examples=20)
+                   ^^^^^^^^^
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1016: in test
+    ???
+tests\test_interval_merge_pbt.py:80: in test_adding_duplicate_interval_does_not_change_result
+    assert passed
+E   assert False
+E   Falsifying example: test_adding_duplicate_interval_does_not_change_result(
+E       values=[(0, 0)],
+E   )
+---------------------------- Captured stdout call -----------------------------
+FAIL: duplicate invariance | input=[(0, 0)]
+FAIL: duplicate invariance | input=[(30, 30)]
+PASS: duplicate invariance | input=[(-29, -10), (-5, 13), (8, 11), (-23, -15), (35, 37), (4, 17), (22, 42), (24, 26), (23, 35), (-16, -6), (12, 18), (-9, 7), (-48, -36), (-18, -8), (17, 24)]
+PASS: duplicate invariance | input=[(-29, -10), (-5, 13), (8, 11), (-23, -15), (35, 37), (4, 17), (22, 42), (24, 26), (23, 35), (-16, -6), (12, 18), (4, 17), (-48, -36), (-18, -8), (17, 24)]
+PASS: duplicate invariance | input=[(-29, -10), (-5, 13), (8, 11), (-23, -15), (35, 37), (4, 17), (-18, -8), (24, 26), (23, 35), (-16, -6), (12, 18), (4, 17), (-48, -36), (-18, -8), (17, 24)]
+PASS: duplicate invariance | input=[(-29, -10), (-5, 13), (8, 11), (-23, -15), (35, 37), (4, 17), (-18, -8), (24, 26), (23, 35), (-16, -6), (12, 18), (4, 17), (-18, -8), (-18, -8), (17, 24)]
+PASS: duplicate invariance | input=[(-29, -10), (-5, 13), (8, 8), (-23, -15), (35, 37), (4, 17), (-18, -8), (24, 26), (23, 35), (-16, -6), (12, 18), (4, 17), (-18, -8), (-18, -8), (17, 24)]
+FAIL: duplicate invariance | input=[(0, 0)]
+FAIL: duplicate invariance | input=[(28, 28)]
+FAIL: duplicate invariance | input=[(2, 2)]
+FAIL: duplicate invariance | input=[(27, 27)]
+FAIL: duplicate invariance | input=[(-31, -31)]
+FAIL: duplicate invariance | input=[(29, 29)]
+FAIL: duplicate invariance | input=[(-28, -28)]
+FAIL: duplicate invariance | input=[(-13, -13)]
+FAIL: duplicate invariance | input=[(-33, -33)]
+FAIL: duplicate invariance | input=[(-12, -12)]
+FAIL: duplicate invariance | input=[(-23, -23)]
+FAIL: duplicate invariance | input=[(-46, -46)]
+FAIL: duplicate invariance | input=[(-17, -17)]
+FAIL: duplicate invariance | input=[(-8, -8)]
+FAIL: duplicate invariance | input=[(-40, -40)]
+FAIL: duplicate invariance | input=[(-3, -3)]
+FAIL: duplicate invariance | input=[(42, 42)]
+FAIL: duplicate invariance | input=[(34, 34)]
+FAIL: duplicate invariance | input=[(49, 49)]
+FAIL: duplicate invariance | input=[(25, 25)]
+FAIL: duplicate invariance | input=[(-9, -9)]
+FAIL: duplicate invariance | input=[(10, 10)]
+FAIL: duplicate invariance | input=[(24, 24)]
+FAIL: duplicate invariance | input=[(46, 46)]
+FAIL: duplicate invariance | input=[(26, 26)]
+FAIL: duplicate invariance | input=[(-49, -49)]
+FAIL: duplicate invariance | input=[(-6, -6)]
+FAIL: duplicate invariance | input=[(-50, -50)]
+FAIL: duplicate invariance | input=[(12, 12)]
+FAIL: duplicate invariance | input=[(22, 22)]
+FAIL: duplicate invariance | input=[(-39, -39)]
+FAIL: duplicate invariance | input=[(6, 6)]
+FAIL: duplicate invariance | input=[(-22, -22)]
+FAIL: duplicate invariance | input=[(14, 14)]
+FAIL: duplicate invariance | input=[(-1, -1)]
+FAIL: duplicate invariance | input=[(9, 9)]
+FAIL: duplicate invariance | input=[(4, 4)]
+FAIL: duplicate invariance | input=[(-36, -36)]
+FAIL: duplicate invariance | input=[(17, 17)]
+FAIL: duplicate invariance | input=[(13, 13)]
+FAIL: duplicate invariance | input=[(48, 48)]
+FAIL: duplicate invariance | input=[(-11, -11)]
+FAIL: duplicate invariance | input=[(15, 15)]
+FAIL: duplicate invariance | input=[(-42, -42)]
+FAIL: duplicate invariance | input=[(3, 3)]
+FAIL: duplicate invariance | input=[(38, 38)]
+FAIL: duplicate invariance | input=[(44, 44)]
+FAIL: duplicate invariance | input=[(23, 23)]
+FAIL: duplicate invariance | input=[(8, 8)]
+FAIL: duplicate invariance | input=[(-43, -43)]
+FAIL: duplicate invariance | input=[(33, 33)]
+FAIL: duplicate invariance | input=[(32, 32)]
+FAIL: duplicate invariance | input=[(-19, -19)]
+FAIL: duplicate invariance | input=[(7, 7)]
+FAIL: duplicate invariance | input=[(11, 11)]
+FAIL: duplicate invariance | input=[(45, 45)]
+FAIL: duplicate invariance | input=[(39, 39)]
+FAIL: duplicate invariance | input=[(-38, -38)]
+FAIL: duplicate invariance | input=[(-18, -18)]
+FAIL: duplicate invariance | input=[(19, 19)]
+FAIL: duplicate invariance | input=[(-7, -7)]
+FAIL: duplicate invariance | input=[(-30, -30)]
+FAIL: duplicate invariance | input=[(-47, -47)]
+PASS: duplicate invariance | input=[(0, 15)]
+FAIL: duplicate invariance | input=[(0, 0)]
+_____________________ test_touching_intervals_are_merged ______________________
+tests\test_interval_merge_pbt.py:84: in test_touching_intervals_are_merged
+    start=st.integers(min_value=-50, max_value=50),
+               ^^^
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1656: in _raise_to_user
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1150: in execute_once
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:824: in default_executor
+    ???
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1107: in run
+    ???
+tests\test_interval_merge_pbt.py:84: in test_touching_intervals_are_merged
+    start=st.integers(min_value=-50, max_value=50),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\core.py:1016: in test
+    ???
+tests\test_interval_merge_pbt.py:96: in test_touching_intervals_are_merged
+    assert passed
+E   assert False
+E   Falsifying example: test_touching_intervals_are_merged(
+E       # The test always failed when commented parts were varied together.
+E       start=0,  # or any other generated value
+E       left_length=0,  # or any other generated value
+E       right_length=0,  # or any other generated value
+E   )
+E   Explanation:
+E       These lines were always and only run by failing examples:
+E           C:\Users\masoc\Documents\Codex\PBTtrial\triangle_pbt_ebt_example\.venv\Lib\site-packages\hypothesis\internal\scrutineer.py:124
+---------------------------- Captured stdout call -----------------------------
+FAIL: touching intervals are merged | input=[(0, 0), (0, 0)]
+FAIL: touching intervals are merged | input=[(-32, -13), (-13, -1)]
+FAIL: touching intervals are merged | input=[(-32, -13), (-13, 6)]
+FAIL: touching intervals are merged | input=[(19, 38), (38, 57)]
+FAIL: touching intervals are merged | input=[(-33, -26), (-26, -13)]
+FAIL: touching intervals are merged | input=[(-33, -26), (-26, -26)]
+FAIL: touching intervals are merged | input=[(-33, -26), (-26, -19)]
+FAIL: touching intervals are merged | input=[(-33, -33), (-33, -26)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 7)]
+FAIL: touching intervals are merged | input=[(7, 7), (7, 14)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 0)]
+FAIL: touching intervals are merged | input=[(-40, -40), (-40, -40)]
+FAIL: touching intervals are merged | input=[(5, 5), (5, 5)]
+FAIL: touching intervals are merged | input=[(31, 31), (31, 31)]
+FAIL: touching intervals are merged | input=[(11, 11), (11, 11)]
+FAIL: touching intervals are merged | input=[(-24, -24), (-24, -24)]
+FAIL: touching intervals are merged | input=[(15, 15), (15, 15)]
+FAIL: touching intervals are merged | input=[(-50, -50), (-50, -50)]
+FAIL: touching intervals are merged | input=[(-37, -37), (-37, -37)]
+FAIL: touching intervals are merged | input=[(25, 25), (25, 25)]
+FAIL: touching intervals are merged | input=[(-47, -47), (-47, -47)]
+FAIL: touching intervals are merged | input=[(29, 29), (29, 29)]
+FAIL: touching intervals are merged | input=[(3, 3), (3, 3)]
+FAIL: touching intervals are merged | input=[(19, 19), (19, 19)]
+FAIL: touching intervals are merged | input=[(-14, -14), (-14, -14)]
+FAIL: touching intervals are merged | input=[(50, 50), (50, 50)]
+FAIL: touching intervals are merged | input=[(43, 43), (43, 43)]
+FAIL: touching intervals are merged | input=[(46, 46), (46, 46)]
+FAIL: touching intervals are merged | input=[(-2, -2), (-2, -2)]
+FAIL: touching intervals are merged | input=[(-27, -27), (-27, -27)]
+FAIL: touching intervals are merged | input=[(-4, -4), (-4, -4)]
+FAIL: touching intervals are merged | input=[(-15, -15), (-15, -15)]
+FAIL: touching intervals are merged | input=[(-11, -11), (-11, -11)]
+FAIL: touching intervals are merged | input=[(-3, -3), (-3, -3)]
+FAIL: touching intervals are merged | input=[(8, 8), (8, 8)]
+FAIL: touching intervals are merged | input=[(20, 20), (20, 20)]
+FAIL: touching intervals are merged | input=[(-34, -34), (-34, -34)]
+FAIL: touching intervals are merged | input=[(-12, -12), (-12, -12)]
+FAIL: touching intervals are merged | input=[(-13, -13), (-13, -13)]
+FAIL: touching intervals are merged | input=[(-5, -5), (-5, -5)]
+FAIL: touching intervals are merged | input=[(-23, -23), (-23, -23)]
+FAIL: touching intervals are merged | input=[(48, 48), (48, 48)]
+FAIL: touching intervals are merged | input=[(-33, -33), (-33, -33)]
+FAIL: touching intervals are merged | input=[(-38, -38), (-38, -38)]
+FAIL: touching intervals are merged | input=[(-45, -45), (-45, -45)]
+FAIL: touching intervals are merged | input=[(42, 42), (42, 42)]
+FAIL: touching intervals are merged | input=[(13, 13), (13, 13)]
+FAIL: touching intervals are merged | input=[(-36, -36), (-36, -36)]
+FAIL: touching intervals are merged | input=[(27, 27), (27, 27)]
+FAIL: touching intervals are merged | input=[(9, 9), (9, 9)]
+FAIL: touching intervals are merged | input=[(45, 45), (45, 45)]
+FAIL: touching intervals are merged | input=[(24, 24), (24, 24)]
+FAIL: touching intervals are merged | input=[(-41, -41), (-41, -41)]
+FAIL: touching intervals are merged | input=[(6, 6), (6, 6)]
+FAIL: touching intervals are merged | input=[(32, 32), (32, 32)]
+FAIL: touching intervals are merged | input=[(-28, -28), (-28, -28)]
+FAIL: touching intervals are merged | input=[(-16, -16), (-16, -16)]
+FAIL: touching intervals are merged | input=[(-18, -18), (-18, -18)]
+FAIL: touching intervals are merged | input=[(40, 40), (40, 40)]
+FAIL: touching intervals are merged | input=[(-10, -10), (-10, -10)]
+FAIL: touching intervals are merged | input=[(14, 14), (14, 14)]
+FAIL: touching intervals are merged | input=[(35, 35), (35, 35)]
+FAIL: touching intervals are merged | input=[(-43, -43), (-43, -43)]
+FAIL: touching intervals are merged | input=[(4, 4), (4, 4)]
+FAIL: touching intervals are merged | input=[(-9, -9), (-9, -9)]
+FAIL: touching intervals are merged | input=[(12, 12), (12, 12)]
+FAIL: touching intervals are merged | input=[(28, 28), (28, 28)]
+FAIL: touching intervals are merged | input=[(36, 36), (36, 36)]
+FAIL: touching intervals are merged | input=[(-32, -32), (-32, -32)]
+FAIL: touching intervals are merged | input=[(2, 2), (2, 2)]
+FAIL: touching intervals are merged | input=[(10, 10), (10, 10)]
+FAIL: touching intervals are merged | input=[(41, 41), (41, 41)]
+FAIL: touching intervals are merged | input=[(-21, -21), (-21, -21)]
+FAIL: touching intervals are merged | input=[(37, 37), (37, 37)]
+FAIL: touching intervals are merged | input=[(-19, -19), (-19, -19)]
+FAIL: touching intervals are merged | input=[(0, 11), (11, 11)]
+FAIL: touching intervals are merged | input=[(0, 3), (3, 3)]
+FAIL: touching intervals are merged | input=[(0, 2), (2, 2)]
+FAIL: touching intervals are merged | input=[(0, 5), (5, 5)]
+FAIL: touching intervals are merged | input=[(0, 18), (18, 18)]
+FAIL: touching intervals are merged | input=[(0, 10), (10, 10)]
+FAIL: touching intervals are merged | input=[(0, 6), (6, 6)]
+FAIL: touching intervals are merged | input=[(0, 4), (4, 4)]
+FAIL: touching intervals are merged | input=[(0, 8), (8, 8)]
+FAIL: touching intervals are merged | input=[(0, 1), (1, 1)]
+FAIL: touching intervals are merged | input=[(0, 9), (9, 9)]
+FAIL: touching intervals are merged | input=[(0, 19), (19, 19)]
+FAIL: touching intervals are merged | input=[(0, 12), (12, 12)]
+FAIL: touching intervals are merged | input=[(0, 7), (7, 7)]
+FAIL: touching intervals are merged | input=[(0, 15), (15, 15)]
+FAIL: touching intervals are merged | input=[(0, 13), (13, 13)]
+FAIL: touching intervals are merged | input=[(0, 17), (17, 17)]
+FAIL: touching intervals are merged | input=[(0, 14), (14, 14)]
+FAIL: touching intervals are merged | input=[(0, 16), (16, 16)]
+FAIL: touching intervals are merged | input=[(0, 20), (20, 20)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 20)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 6)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 1)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 15)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 4)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 3)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 5)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 14)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 19)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 16)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 2)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 10)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 13)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 12)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 18)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 11)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 8)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 17)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 9)]
+FAIL: touching intervals are merged | input=[(-47, -42), (-42, -28)]
+FAIL: touching intervals are merged | input=[(-34, -30), (-30, -11)]
+FAIL: touching intervals are merged | input=[(19, 22), (22, 29)]
+FAIL: touching intervals are merged | input=[(-12, 3), (3, 18)]
+FAIL: touching intervals are merged | input=[(20, 34), (34, 40)]
+FAIL: touching intervals are merged | input=[(43, 51), (51, 57)]
+FAIL: touching intervals are merged | input=[(-36, -26), (-26, -24)]
+FAIL: touching intervals are merged | input=[(40, 45), (45, 50)]
+FAIL: touching intervals are merged | input=[(-34, -19), (-19, -13)]
+FAIL: touching intervals are merged | input=[(31, 41), (41, 45)]
+FAIL: touching intervals are merged | input=[(-28, -26), (-26, -12)]
+FAIL: touching intervals are merged | input=[(45, 49), (49, 52)]
+FAIL: touching intervals are merged | input=[(-50, -32), (-32, -26)]
+FAIL: touching intervals are merged | input=[(28, 47), (47, 50)]
+FAIL: touching intervals are merged | input=[(36, 40), (40, 55)]
+FAIL: touching intervals are merged | input=[(40, 52), (52, 61)]
+FAIL: touching intervals are merged | input=[(-24, -8), (-8, 2)]
+FAIL: touching intervals are merged | input=[(32, 50), (50, 70)]
+FAIL: touching intervals are merged | input=[(31, 42), (42, 49)]
+FAIL: touching intervals are merged | input=[(-34, -34), (-34, -32)]
+FAIL: touching intervals are merged | input=[(-27, -7), (-7, -5)]
+FAIL: touching intervals are merged | input=[(-27, -14), (-14, -14)]
+FAIL: touching intervals are merged | input=[(-37, -25), (-25, -9)]
+FAIL: touching intervals are merged | input=[(-45, -41), (-41, -38)]
+FAIL: touching intervals are merged | input=[(20, 33), (33, 51)]
+FAIL: touching intervals are merged | input=[(-36, -35), (-35, -15)]
+FAIL: touching intervals are merged | input=[(-33, -29), (-29, -19)]
+FAIL: touching intervals are merged | input=[(-12, -5), (-5, 0)]
+FAIL: touching intervals are merged | input=[(-47, -30), (-30, -12)]
+FAIL: touching intervals are merged | input=[(-28, -14), (-14, 6)]
+FAIL: touching intervals are merged | input=[(-34, -30), (-30, -23)]
+FAIL: touching intervals are merged | input=[(48, 60), (60, 75)]
+FAIL: touching intervals are merged | input=[(19, 23), (23, 35)]
+FAIL: touching intervals are merged | input=[(15, 32), (32, 43)]
+FAIL: touching intervals are merged | input=[(-28, -28), (-28, -10)]
+FAIL: touching intervals are merged | input=[(4, 14), (14, 21)]
+FAIL: touching intervals are merged | input=[(-34, -33), (-33, -33)]
+FAIL: touching intervals are merged | input=[(-10, 3), (3, 19)]
+FAIL: touching intervals are merged | input=[(-2, 9), (9, 10)]
+FAIL: touching intervals are merged | input=[(-34, -31), (-31, -17)]
+FAIL: touching intervals are merged | input=[(48, 59), (59, 60)]
+FAIL: touching intervals are merged | input=[(31, 31), (31, 43)]
+FAIL: touching intervals are merged | input=[(15, 32), (32, 42)]
+FAIL: touching intervals are merged | input=[(-15, -14), (-14, -12)]
+FAIL: touching intervals are merged | input=[(-12, 2), (2, 22)]
+FAIL: touching intervals are merged | input=[(-12, 0), (0, 7)]
+FAIL: touching intervals are merged | input=[(-38, -21), (-21, -9)]
+FAIL: touching intervals are merged | input=[(-34, -23), (-23, -21)]
+FAIL: touching intervals are merged | input=[(35, 38), (38, 46)]
+FAIL: touching intervals are merged | input=[(-10, 6), (6, 7)]
+FAIL: touching intervals are merged | input=[(28, 40), (40, 44)]
+FAIL: touching intervals are merged | input=[(-45, -45), (-45, -44)]
+FAIL: touching intervals are merged | input=[(20, 24), (24, 40)]
+FAIL: touching intervals are merged | input=[(45, 63), (63, 78)]
+FAIL: touching intervals are merged | input=[(29, 41), (41, 56)]
+FAIL: touching intervals are merged | input=[(-19, -9), (-9, -9)]
+FAIL: touching intervals are merged | input=[(-13, -12), (-12, 4)]
+FAIL: touching intervals are merged | input=[(-47, -33), (-33, -21)]
+FAIL: touching intervals are merged | input=[(-16, -12), (-12, -9)]
+FAIL: touching intervals are merged | input=[(15, 22), (22, 24)]
+FAIL: touching intervals are merged | input=[(-27, -21), (-21, -11)]
+FAIL: touching intervals are merged | input=[(4, 6), (6, 26)]
+FAIL: touching intervals are merged | input=[(42, 46), (46, 51)]
+FAIL: touching intervals are merged | input=[(-5, 4), (4, 15)]
+FAIL: touching intervals are merged | input=[(-9, 6), (6, 18)]
+FAIL: touching intervals are merged | input=[(-37, -36), (-36, -21)]
+FAIL: touching intervals are merged | input=[(43, 56), (56, 74)]
+FAIL: touching intervals are merged | input=[(11, 27), (27, 43)]
+FAIL: touching intervals are merged | input=[(-28, -24), (-24, -17)]
+FAIL: touching intervals are merged | input=[(27, 27), (27, 37)]
+FAIL: touching intervals are merged | input=[(-12, -8), (-8, -6)]
+FAIL: touching intervals are merged | input=[(-16, 1), (1, 16)]
+FAIL: touching intervals are merged | input=[(24, 28), (28, 40)]
+FAIL: touching intervals are merged | input=[(-37, -37), (-37, -22)]
+FAIL: touching intervals are merged | input=[(-5, 8), (8, 10)]
+FAIL: touching intervals are merged | input=[(19, 22), (22, 41)]
+FAIL: touching intervals are merged | input=[(-28, -10), (-10, 6)]
+FAIL: touching intervals are merged | input=[(-37, -29), (-29, -13)]
+FAIL: touching intervals are merged | input=[(-10, -6), (-6, 13)]
+FAIL: touching intervals are merged | input=[(-37, -36), (-36, -25)]
+FAIL: touching intervals are merged | input=[(13, 16), (16, 23)]
+FAIL: touching intervals are merged | input=[(13, 17), (17, 36)]
+FAIL: touching intervals are merged | input=[(20, 25), (25, 29)]
+FAIL: touching intervals are merged | input=[(27, 40), (40, 40)]
+FAIL: touching intervals are merged | input=[(-32, -20), (-20, -8)]
+FAIL: touching intervals are merged | input=[(13, 13), (13, 33)]
+FAIL: touching intervals are merged | input=[(-34, -32), (-32, -18)]
+FAIL: touching intervals are merged | input=[(-10, 2), (2, 4)]
+FAIL: touching intervals are merged | input=[(9, 16), (16, 20)]
+FAIL: touching intervals are merged | input=[(-47, -47), (-47, -29)]
+FAIL: touching intervals are merged | input=[(-45, -32), (-32, -18)]
+FAIL: touching intervals are merged | input=[(11, 11), (11, 15)]
+FAIL: touching intervals are merged | input=[(-28, -11), (-11, -11)]
+FAIL: touching intervals are merged | input=[(-37, -19), (-19, -13)]
+FAIL: touching intervals are merged | input=[(13, 20), (20, 34)]
+FAIL: touching intervals are merged | input=[(12, 26), (26, 27)]
+FAIL: touching intervals are merged | input=[(-34, -26), (-26, -19)]
+FAIL: touching intervals are merged | input=[(13, 25), (25, 42)]
+FAIL: touching intervals are merged | input=[(31, 45), (45, 57)]
+FAIL: touching intervals are merged | input=[(0, 0), (0, 0)]
+=========================== short test summary info ===========================
+FAILED tests/test_interval_merge_pbt.py::test_output_is_sorted_and_non_overlapping
+FAILED tests/test_interval_merge_pbt.py::test_adding_duplicate_interval_does_not_change_result
+FAILED tests/test_interval_merge_pbt.py::test_touching_intervals_are_merged
+========================= 3 failed, 3 passed in 5.86s =========================

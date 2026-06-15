@@ -4,4 +4,3 @@ __pycache__/
 .hypothesis/
 .coverage
 htmlcov/
-sbfl_results/

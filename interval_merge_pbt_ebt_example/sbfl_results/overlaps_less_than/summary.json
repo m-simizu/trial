@@ -1,0 +1,17 @@
+{
+  "label": "overlaps_less_than",
+  "formula": "ochiai",
+  "sut": "C:\\Users\\masoc\\Documents\\Codex\\PBTtrial\\interval_merge_pbt_ebt_example\\interval_merger.py",
+  "suites": {
+    "ebt": {
+      "passed": 10,
+      "failed": 1,
+      "total": 11
+    },
+    "pbt": {
+      "passed": 3,
+      "failed": 3,
+      "total": 6
+    }
+  }
+}
