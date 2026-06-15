@@ -1,0 +1,8 @@
+# テスト実行フレームワーク
+pytest>=8.0
+
+# Property-Based Testing用ライブラリ
+hypothesis>=6.0
+
+# 行・分岐カバレッジ測定用pytestプラグイン
+pytest-cov>=5.0
